@@ -12,6 +12,8 @@ src/tsconfig.*.json
 .mocha.opts
 .nycrc.json
 .travis.yml
+.releaserc.json
+commitlint.config.js
 
 # Logs
 logs
