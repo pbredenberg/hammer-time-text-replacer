@@ -8,6 +8,8 @@
 [![Dev Dependency Status](https://david-dm.org/silvermine/hammer-time-text-replacer/dev-status.svg)](https://david-dm.org/silvermine/hammer-time-text-replacer#info=devDependencies&view=table)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
+Demo: https://pbredenberg.github.io/hammer-time-text-replacer/example.html
+
 ## What?
 
 Replaces all text on a HTML document with the CSS class `replace-me` with the text "Hammer Time!"
