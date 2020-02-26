@@ -1,7 +1,8 @@
 export default class Replacer {
-   constructor() {
-      console.log('It\'s hammer time!');
+   public constructor() {
+      console.log('It\'s hammer time!'); // eslint-disable-line
       const button = document.querySelector('.replace-button');
+
       if (button) {
          button.addEventListener('click', () => {
             this.replace();
@@ -11,11 +12,11 @@ export default class Replacer {
 
    public replace(): void {
       document.querySelectorAll('.replace-me').forEach(
-         el => {
+         (el) => {
             if (el.textContent) {
-               el.textContent = 'Hammer time.'
+               el.textContent = 'Hammer time.';
             }
          }
-      )
+      );
    }
 }
