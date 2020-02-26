@@ -46,6 +46,7 @@ node_modules
 
 # Build output
 dist
+!dist/hammer-time-text-replacer.js
 
 # NYC
 .nyc_output
