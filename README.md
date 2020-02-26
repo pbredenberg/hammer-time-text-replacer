@@ -12,12 +12,12 @@ Demo: https://pbredenberg.github.io/hammer-time-text-replacer/example.html
 
 ## What?
 
-Replaces all text on a HTML document with the CSS class `replace-me` with the text "Hammer Time!"
+Replaces all text on a HTML document with the CSS class `replace-me` with the text "Hammer Time."
 
 ## Why?
 
 To facilitate replacing all text on a HTML document with the CSS class `replace-me` with
-the text "Hammer Time!"
+the text "Hammer Time."
 
 ## How?
 
