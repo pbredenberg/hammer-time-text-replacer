@@ -14,7 +14,12 @@ Replaces all text on a HTML document with the CSS class `replace-me` with the te
 
 ## Why?
 
-To facilitate replacing all text on a HTML document with the CSS class `replace-me` with the text "Hammer Time!"
+To facilitate replacing all text on a HTML document with the CSS class `replace-me` with
+the text "Hammer Time!"
+
+## How?
+
+See `example.html` in this repo.
 
 ## License
 
