@@ -8,11 +8,11 @@
 <body>
     <h1 class="replace-me">Greetings</h1>
     <p class="replace-me">Welcome to the official Math Club website.</p>
-    <p><button class="replace-button replace-me">Sign Up for Math Club!</button></p>
+    <p><button class="my-custom-button-selector replace-me">Sign Up for Math Club!</button></p>
     <script src="dist/hammer-time-text-replacer.js"></script>
     <script>
         if (window.hammerTimeReplacer) {
-            var replacer = new window.hammerTimeReplacer.Replacer();
+            var replacer = new window.hammerTimeReplacer.Replacer({ buttonSelector: '.my-custom-button-selector'});
         }
     </script>
 </body>
