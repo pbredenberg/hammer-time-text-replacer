@@ -17,17 +17,19 @@ script:
    - grunt clean build
    - npm test
 
-# jobs:
-#   include:
+jobs:
+  include:
 #     # Define the release stage that runs semantic-release
-#     - stage: release
-#       node_js: 12
-#       deploy:
-#         provider: script
-#         skip_cleanup: true
-#         script:
-#           - npm run semantic-release
+   - stage: release
+      node_js: 12
+      deploy:
+         provider: script
+         skip_cleanup: true
+         script:
+            - npm run semantic-release
+         on:
+            tags: true
 
 # For code coverage:
-after_success:
-   cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage
+# after_success:
+#    cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage
