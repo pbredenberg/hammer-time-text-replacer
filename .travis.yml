@@ -4,8 +4,6 @@ node_js:
    - "lts/*" # Latest LTS version
    - "12"
    - "10"
-   - "8"
-
 
 before_install: npm i -g npm@6.13.4
 
