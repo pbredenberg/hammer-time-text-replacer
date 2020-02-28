@@ -1,5 +1,6 @@
 interface IReplacerConfig {
    buttonSelector?: string;
+   replacementSelectors?: string[];
 }
 
 export default class Replacer {
@@ -23,7 +24,9 @@ export default class Replacer {
    }
 
    public replace(): void {
-      document.querySelectorAll('.replace-me').forEach(
+      const selectors = this._config.replacementSelectors || [ '.replace-me' ];
+
+      document.querySelectorAll(selectors.join(',')).forEach(
          (el) => {
             if (el.textContent) {
                el.textContent = 'Hammer time.';

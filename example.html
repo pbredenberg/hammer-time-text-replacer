@@ -6,13 +6,16 @@
     <title>Math Club Website</title>
 </head>
 <body>
-    <h1 class="replace-me">Greetings</h1>
-    <p class="replace-me">Welcome to the official Math Club website.</p>
-    <p><button class="my-custom-button-selector replace-me">Sign Up for Math Club!</button></p>
+    <h1 class="anything">Greetings</h1>
+    <p class="you">Welcome to the official Math Club website.</p>
+    <p><button class="my-custom-button-selector want">Sign Up for Math Club!</button></p>
     <script src="dist/hammer-time-text-replacer.js"></script>
     <script>
         if (window.hammerTimeReplacer) {
-            var replacer = new window.hammerTimeReplacer.Replacer({ buttonSelector: '.my-custom-button-selector'});
+            var replacer = new window.hammerTimeReplacer.Replacer({
+                buttonSelector: '.my-custom-button-selector',
+                replacementSelectors: [ '.anything', '.you', '.want' ]
+            });
         }
     </script>
 </body>
