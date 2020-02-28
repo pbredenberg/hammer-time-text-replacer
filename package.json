@@ -9,7 +9,8 @@
     "prepare": "grunt build",
     "test": "TS_NODE_PROJECT='tests/tsconfig.json' TS_NODE_FILES=true nyc mocha --opts ./.mocha.opts",
     "commitlint": "commitlint --from 55466e2",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "release-preview": "./node_modules/.bin/semantic-release --dry-run"
   },
   "author": "Paul Bredenberg",
   "license": "MIT",
@@ -25,6 +26,7 @@
     "@commitlint/cli": "7.5.2",
     "@commitlint/config-conventional": "7.5.0",
     "@commitlint/travis-cli": "7.5.2",
+    "@semantic-release/exec": "5.0.0",
     "@silvermine/chai-strictly-equal": "1.1.0",
     "@silvermine/eslint-config": "3.0.0-rc.0",
     "@silvermine/typescript-config": "0.10.0",

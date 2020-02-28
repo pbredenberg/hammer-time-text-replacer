@@ -18,6 +18,7 @@ script:
 jobs:
   include:
 #     # Define the release stage that runs semantic-release
+   if: branch = master
    - stage: release
       node_js: 12
       deploy:
@@ -25,8 +26,6 @@ jobs:
          skip_cleanup: true
          script:
             - npm run semantic-release
-         on:
-            tags: true
 
 # For code coverage:
 # after_success:
