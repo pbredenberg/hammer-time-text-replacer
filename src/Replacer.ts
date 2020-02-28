@@ -1,17 +1,25 @@
-interface IReplacer {
+interface IReplacerConfig {
    buttonSelector?: string;
 }
 
 export default class Replacer {
-   public constructor(config: IReplacer = {}) {
-      console.log('It\'s hammer time!'); // eslint-disable-line
-      const button = document.querySelector(config.buttonSelector || '.replace-button');
+
+   private _config: IReplacerConfig = {};
+
+   public constructor(config: IReplacerConfig = {}) {
+      let button;
+
+      this._config = config;
+
+      button = document.querySelector(this._config.buttonSelector || '.replace-button');
 
       if (button) {
          button.addEventListener('click', () => {
             this.replace();
          });
       }
+
+      console.log('It\'s hammer time!'); // eslint-disable-line
    }
 
    public replace(): void {
