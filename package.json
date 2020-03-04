@@ -8,8 +8,7 @@
   "scripts": {
     "prepare": "grunt build",
     "test": "TS_NODE_PROJECT='tests/tsconfig.json' TS_NODE_FILES=true nyc mocha --opts ./.mocha.opts",
-    "commitlint": "commitlint --from 55466e2",
-    "semantic-release": "semantic-release"
+    "commitlint": "commitlint --from 55466e2"
   },
   "author": "Paul Bredenberg",
   "license": "MIT",
@@ -47,8 +46,6 @@
     "jsdom-global": "3.0.2",
     "mocha": "5.2.0",
     "nyc": "13.3.0",
-    "semantic-release": "^17.0.4",
-    "semantic-release-cli": "5.2.3",
     "sinon": "5.1.1",
     "source-map-support": "0.5.9",
     "standard-version": "5.0.2",
