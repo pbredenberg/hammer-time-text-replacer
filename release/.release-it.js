@@ -13,13 +13,4 @@ module.exports = {
     preRelease: 'rc',
     plugins: config.plugins,
     git: git,
-    npm: {
-        publish: false,
-    },
-    github: {
-        release: false,
-    },
-    gitlab: {
-        release: false
-    }
 };
