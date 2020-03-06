@@ -1,6 +1,6 @@
 {
   "name": "hammer-time-text-replacer",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "./dist/commonjs/index",
   "types": "./dist/types/index.d.ts",
@@ -8,7 +8,10 @@
   "scripts": {
     "prepare": "grunt build",
     "test": "TS_NODE_PROJECT='tests/tsconfig.json' TS_NODE_FILES=true nyc mocha --opts ./.mocha.opts",
-    "commitlint": "commitlint --from 55466e2"
+    "commitlint": "commitlint --from 55466e2",
+    "release-prepare-rc": "release-it --config='./release/.release-it.rc.json'",
+    "release-prepare": "release-it --config='./release/.release-it.json'",
+    "release-publish": "release-it --config='./release/.release-it.publish.json'"
   },
   "author": "Paul Bredenberg",
   "license": "MIT",
@@ -24,6 +27,7 @@
     "@commitlint/cli": "7.5.2",
     "@commitlint/config-conventional": "7.5.0",
     "@commitlint/travis-cli": "7.5.2",
+    "@release-it/conventional-changelog": "1.1.0",
     "@silvermine/chai-strictly-equal": "1.1.0",
     "@silvermine/eslint-config": "3.0.0-rc.0",
     "@silvermine/typescript-config": "0.10.0",
@@ -46,6 +50,7 @@
     "jsdom-global": "3.0.2",
     "mocha": "5.2.0",
     "nyc": "13.3.0",
+    "release-it": "12.6.3",
     "sinon": "5.1.1",
     "source-map-support": "0.5.9",
     "ts-loader": "5.3.0",

@@ -1,0 +1,21 @@
+{
+    "git": {
+        "push": false,
+        "changelog": "git log --pretty=format:\"* %s (%h)\" $(git describe --tags --abbrev=0)...HEAD"
+    },
+    "plugins": {
+        "@release-it/conventional-changelog": {
+          "preset": "convetionalcommits",
+          "infile": "CHANGELOG.md"
+        }
+    },
+    "npm": {
+        "publish": false
+    },
+    "github": {
+        "release": false
+    },
+    "gitlab": {
+        "release": false
+    }
+}
