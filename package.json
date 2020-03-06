@@ -9,9 +9,9 @@
     "prepare": "grunt build",
     "test": "TS_NODE_PROJECT='tests/tsconfig.json' TS_NODE_FILES=true nyc mocha --opts ./.mocha.opts",
     "commitlint": "commitlint --from 55466e2",
-    "release-prepare-rc": "release-it --config='./release/.release-it.rc.json'",
-    "release-prepare": "release-it --config='./release/.release-it.json'",
-    "release-publish": "release-it --config='./release/.release-it.publish.json'"
+    "release-prepare-rc": "release-it --config='./release/.release-it.rc.js'",
+    "release-prepare": "release-it --config='./release/.release-it.js'",
+    "release-publish": "release-it --config='./release/.release-it.publish.js'"
   },
   "author": "Paul Bredenberg",
   "license": "MIT",
