@@ -13,7 +13,7 @@
     <script>
         if (window.hammerTimeReplacer) {
             var replacer = new window.hammerTimeReplacer.Replacer({
-                buttonSelector: '.my-custom-button-selector',
+                buttonSelectors: ['.my-custom-button-selector'],
                 replacementSelectors: [ '.anything', '.you', '.want' ]
             });
         }
