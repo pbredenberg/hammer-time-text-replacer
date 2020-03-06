@@ -10,6 +10,7 @@ const git = Object.assign(
 );
 
 module.exports = {
+    preRelease: 'rc',
     plugins: config.plugins,
     git: git,
     npm: {
