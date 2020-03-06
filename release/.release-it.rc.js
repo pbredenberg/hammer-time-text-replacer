@@ -17,6 +17,6 @@ module.exports = {
         publish: false,
     },
     github: {
-        'release': false,
+        release: false,
     },
 };

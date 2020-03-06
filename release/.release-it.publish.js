@@ -1,10 +1,16 @@
 'use strict';
 
+const config = require('./release.config');
+
 module.exports = {
-    noGit: true,
+    plugins: config.plugins, 
+    git: {
+        push: false,
+        tag: false,
+        commit: false,
+    },
     npm: {
         publish: true,
-        ignoreVersion: true,
     },
     github: {
         release: true,

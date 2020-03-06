@@ -11,5 +11,6 @@ module.exports = {
       tagName: 'v${version}',
       tagAnnotation: 'Release ${version}',
       push: false,
+      commitMessage: 'chore: release ${version}',
    },
 };
