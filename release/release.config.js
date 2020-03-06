@@ -1,5 +1,7 @@
 'use strict';
 
+const RELEASE_VERSION_NAME = 'release v${version}';
+
 module.exports = {
    plugins: {
       '@release-it/conventional-changelog': {
@@ -9,7 +11,8 @@ module.exports = {
    },
    git: {
       tagName: 'v${version}',
-      tagAnnotation: 'Release ${version}',
-      commitMessage: 'chore: release ${version}',
+      tagAnnotation: RELEASE_VERSION_NAME,
+      commitMessage: 'chore: ' + RELEASE_VERSION_NAME,
+      releaseName: RELEASE_VERSION_NAME,
    },
 };
