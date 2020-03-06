@@ -15,6 +15,9 @@ export default class Replacer {
       console.log('It\'s hammer time!'); // eslint-disable-line
    }
 
+   /**
+    * Performs repacements.
+    */
    public replace(): void {
       const selectors = this._config.replacementSelectors || [ '.replace-me' ];
 
