@@ -12,7 +12,7 @@ export default class Replacer {
 
       this._initButtons();
 
-      console.log('It\'s hammer time!'); // eslint-disable-line
+      console.log('It\'s hammer tiiiiime!'); // eslint-disable-line
    }
 
    /**
