@@ -1,9 +1,10 @@
-## [1.5.0-rc.0](https://github.com/pbredenberg/hammer-time-text-replacer/compare/v1.4.2...v1.5.0-rc.0) (2020-03-11)
-
+## [1.5.0](https://github.com/pbredenberg/hammer-time-text-replacer/compare/v1.5.0-rc.0...v1.5.0) (2020-03-11)
 
 ### Features
 
 * change init log message ([ca4b020](https://github.com/pbredenberg/hammer-time-text-replacer/commit/ca4b0206136745c7ed749ce4bd1ec9406613d12a))
+
+## [1.5.0-rc.0](https://github.com/pbredenberg/hammer-time-text-replacer/compare/v1.4.2...v1.5.0-rc.0) (2020-03-11)
 
 ### [1.4.2](https://github.com/pbredenberg/hammer-time-text-replacer/compare/v1.4.2-rc.0...v1.4.2) (2020-03-06)
 
