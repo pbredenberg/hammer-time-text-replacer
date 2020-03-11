@@ -1,6 +1,6 @@
 # hammer-time-text-replacer
 
-[![NPM Version](https://img.shields.io/npm/v/pbredenberg/hammer-time-text-replacer.svg)](https://www.npmjs.com/package/pbredenberg/hammer-time-text-replacer)
+[![NPM Version](https://img.shields.io/npm/v/hammer-time-text-replacer.svg)](https://www.npmjs.com/package/hammer-time-text-replacer)
 [![License](https://img.shields.io/github/license/pbredenberg/hammer-time-text-replacer.svg)](./LICENSE)
 [![Build Status](https://travis-ci.com/pbredenberg/hammer-time-text-replacer.svg?branch=master)](https://travis-ci.com/pbredenberg/hammer-time-text-replacer)
 [![Coverage Status](https://coveralls.io/repos/github/pbredenberg/hammer-time-text-replacer/badge.svg?branch=master)](https://coveralls.io/github/pbredenberg/hammer-time-text-replacer?branch=master)

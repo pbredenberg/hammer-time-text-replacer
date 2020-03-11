@@ -4,7 +4,11 @@ const RELEASE_VERSION_NAME = 'release v${version}';
 
 module.exports = {
    plugins: {
-      '@release-it/conventional-changelog': {
+      // '@release-it/conventional-changelog': {
+      //    preset: 'conventionalcommits',
+      //    infile: 'CHANGELOG.md',
+      // },
+      './release/interactive-changelog.js': {
          preset: 'conventionalcommits',
          infile: 'CHANGELOG.md',
       },
