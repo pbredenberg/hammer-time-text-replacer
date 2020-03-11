@@ -5,7 +5,7 @@ class InteractiveConventionalChangelog extends ConventionalChangelog {
    async beforeRelease() {
       const { infile } = this.options,
             { isDryRun } = this.global,
-            changelog = await this.getChangelog();
+            changelog = this.config.getContext().changelog;
 
       this.debug({ changelog });
       this.config.setContext({ changelog });
@@ -16,17 +16,19 @@ class InteractiveConventionalChangelog extends ConventionalChangelog {
          await this.writeChangelog();
       }
 
+      // Set up our interactive prompt.
       this.registerPrompts({
          pause: {
             type: 'confirm',
-            message: () => { return 'Have you finished editing the changelog?'; },
+            message: () => { return `Paused for ${infile} edits. Continue?`; },
          },
       });
 
+      // Execute the prompt.
       await this.step(
          {
             enabled: true,
-            label: 'Pause for changelog update:',
+            label: 'Pause for changelog update.',
             prompt: 'pause',
          }
       );

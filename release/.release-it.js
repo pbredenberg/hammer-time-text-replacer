@@ -12,4 +12,8 @@ const git = Object.assign(
 module.exports = {
     plugins: config.plugins,
     git: git,
+    gitHub: {
+        release: true,
+        releaseName: 'Release ${version}'
+    }
 };
