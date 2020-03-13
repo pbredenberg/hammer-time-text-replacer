@@ -11,8 +11,6 @@ export default class Replacer {
       this._config = config;
 
       this._initButtons();
-
-      console.log('It\'s hammer tiiiiime, baby!'); // eslint-disable-line
    }
 
    /**
