@@ -1,12 +1,16 @@
 'use strict';
 
-const RELEASE_VERSION_NAME = 'release v${version}';
+const RELEASE_VERSION_NAME = 'release v${version}',
+      CHANGELOG_INFILE = 'CHANGELOG.md';
 
 module.exports = {
    plugins: {
-      './release/interactive-changelog.js': {
+      '@release-it/conventional-changelog': {
          preset: 'conventionalcommits',
-         infile: 'CHANGELOG.md',
+         infile: CHANGELOG_INFILE,
+      },
+      './release/pause-for-changelog.js': {
+         infile: CHANGELOG_INFILE,
       },
    },
    git: {
