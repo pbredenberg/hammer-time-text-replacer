@@ -6,7 +6,7 @@ class GitTagRc extends Plugin {
    getNewTag() {
       const context = this.config.getContext();
 
-      return context.version;
+      return `v${context.version}`;
    }
    async beforeRelease() {
       const newTag = this.getNewTag();
