@@ -1,4 +1,5 @@
 'use strict';
+
 const { Plugin } = require('release-it');
 
 class PauseForChangelog extends Plugin {
