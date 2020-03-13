@@ -5,7 +5,7 @@ class InteractiveConventionalChangelog extends ConventionalChangelog {
    async beforeRelease() {
       const { infile } = this.options,
             { isDryRun } = this.global,
-            changelog = this.config.getContext().changelog;
+            changelog = await this.getChangelog();
 
       this.debug({ changelog });
       this.config.setContext({ changelog });
