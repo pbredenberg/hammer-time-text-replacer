@@ -1,3 +1,5 @@
+### [1.9.4-rc.0](https://github.com/pbredenberg/hammer-time-text-replacer/compare/v1.10.0-rc.0...v1.9.4-rc.0) (2020-03-13)
+
 ### [1.9.3-rc.0](https://github.com/pbredenberg/hammer-time-text-replacer/compare/v1.9.2...v1.9.3-rc.0) (2020-03-13)
 
 ### [1.9.2](https://github.com/pbredenberg/hammer-time-text-replacer/compare/1.9.2-rc.0...1.9.2) (2020-03-13)
