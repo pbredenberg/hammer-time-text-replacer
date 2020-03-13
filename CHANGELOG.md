@@ -1,4 +1,12 @@
+## [1.6.0](https://github.com/pbredenberg/hammer-time-text-replacer/compare/v1.5.0...v1.6.0) (2020-03-13)
+
+
+### Features
+
+* be even more specific when logging plugin status on load ([ffe203c](https://github.com/pbredenberg/hammer-time-text-replacer/commit/ffe203c45343227a162269b6840993ef4b6da35f))
+
 ## [1.5.0](https://github.com/pbredenberg/hammer-time-text-replacer/compare/v1.5.0-rc.0...v1.5.0) (2020-03-11)
+
 
 ### Features
 
