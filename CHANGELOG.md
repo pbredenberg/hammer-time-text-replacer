@@ -1,3 +1,10 @@
+## [1.7.0-rc.0](https://github.com/pbredenberg/hammer-time-text-replacer/compare/v1.6.0...v1.7.0-rc.0) (2020-03-13)
+
+
+### Features
+
+* remove initial log in constructor ([5751bd2](https://github.com/pbredenberg/hammer-time-text-replacer/commit/5751bd27231c64b8b678e58c14f054174942c0fe))
+
 ## [1.6.0](https://github.com/pbredenberg/hammer-time-text-replacer/compare/v1.5.0...v1.6.0) (2020-03-13)
 
 
