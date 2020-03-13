@@ -18,5 +18,7 @@ module.exports = {
       tagAnnotation: RELEASE_VERSION_NAME,
       commitMessage: 'chore: ' + RELEASE_VERSION_NAME,
       releaseName: RELEASE_VERSION_NAME,
+      changelog: 'git log --pretty=format:"* %s (%h)" $(git describe --tags --abbrev=0)...HEAD',
    },
+   gitHub: { release: true },
 };
