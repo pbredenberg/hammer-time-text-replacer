@@ -1,6 +1,6 @@
 {
   "name": "hammer-time-text-replacer",
-  "version": "1.8.0-rc.0",
+  "version": "1.9.0-rc.0",
   "description": "",
   "main": "./dist/commonjs/index",
   "types": "./dist/types/index.d.ts",
