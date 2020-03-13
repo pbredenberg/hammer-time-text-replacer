@@ -3,14 +3,19 @@
 const { Plugin } = require('release-it');
 
 class GitTagRc extends Plugin {
-   async beforeRelease() {
+   getNewTag() {
       const context = this.config.getContext();
+
+      return context.version;
+   }
+   async beforeRelease() {
+      const newTag = this.getNewTag();
 
       // Set up our interactive prompt.
       this.registerPrompts({
          tagRc: {
             type: 'confirm',
-            message: () => { return `Tag this release with ${context.version}?`; },
+            message: () => { return `Tag this release with ${newTag}?`; },
          },
       });
 
@@ -22,8 +27,13 @@ class GitTagRc extends Plugin {
             prompt: 'tagRc',
          }
       );
+      this.log.log(`Tagging ${newTag}...`);
+      this.exec(`git tag ${newTag}`);
+   }
 
-      this.exec(`git tag -a ${context.version}`);
+   afterRelease() {
+      this.log.log('Pushing tags...');
+      this.exec(`git push origin ${this.config.getContext()}`);
    }
 }
 
