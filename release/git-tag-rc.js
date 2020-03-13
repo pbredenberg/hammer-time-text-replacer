@@ -25,12 +25,13 @@ class GitTagRc extends Plugin {
    }
 
    async pushTag() {
-      const newTag = this.getNewTag();
+      const newTag = this.getNewTag(),
+            { remote } = this.options;
 
       this.log.log('Pushing tags...');
 
       try {
-         return this.exec(`git push origin ${newTag}`);
+         return this.exec(`git push ${remote} ${newTag}`);
       } catch(error) {
          this.handleError(error);
       }
