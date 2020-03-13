@@ -3,6 +3,7 @@ interface IReplacerConfig {
    replacementSelectors?: string[];
    restoreButtonSelectors?: string[];
    replaceButtonSelectors?: string[];
+   replacementText?: string;
 }
 
 interface INodeRecord {
@@ -10,7 +11,8 @@ interface INodeRecord {
    node: Node;
 }
 
-const DEFAULT_REPLACEMENT_SELECTOR = '.replace-me';
+const DEFAULT_REPLACEMENT_SELECTOR = '.replace-me',
+      DEFAULT_REPLACEMENT_TEXT = 'Hammer time.';
 
 export default class Replacer {
 
@@ -38,7 +40,7 @@ export default class Replacer {
                   id: this._nodeRecords.length,
                   node: el.cloneNode(true),
                });
-               el.textContent = 'Hammer time.';
+               el.textContent = this._config.replacementText || DEFAULT_REPLACEMENT_TEXT;
             }
          });
    }
