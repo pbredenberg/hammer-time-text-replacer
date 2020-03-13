@@ -2,15 +2,10 @@
 
 const config = require('./release.config');
 
-const git = Object.assign(
-   config.git,
-   {
-      changelog: false,
-   }
-);
+config.git.changelog = false;
+config.git.tagAnnotation = null;
 
 module.exports = {
    preRelease: 'rc',
-   plugins: config.plugins,
-   git: git,
+   git: config.git,
 };
