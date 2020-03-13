@@ -33,7 +33,7 @@ class GitTagRc extends Plugin {
 
    afterRelease() {
       this.log.log('Pushing tags...');
-      this.exec(`git push origin ${this.config.getContext()}`);
+      this.exec(`git push origin ${this.getNewTag()}`);
    }
 }
 
