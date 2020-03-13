@@ -1,7 +1,7 @@
 'use strict';
 
 const RELEASE_VERSION_NAME = 'release v${version}',
-      CHANGELOG_PATTERN = 'git log --pretty=format:"* %s (%h)" $(git describe --tags --abbrev=0)...HEAD',
+      CHANGELOG_PATTERN = 'git log --pretty=format:"* %s (%h)" $(git describe --match "v[0-9]*" --abbrev=0)...HEAD',
       CHANGELOG_INFILE = 'CHANGELOG.md',
       REPOSITORY_RELEASE_SETTINGS = {};
 
