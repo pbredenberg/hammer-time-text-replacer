@@ -1,9 +1,9 @@
 'use strict';
 
-const config = require('@silvermine/release-it-config');
+const config = require('@silvermine/release-it-config').default;
 
 module.exports = {
-   plugins: config.default.plugins,
-   git: config.default.git,
-   gitHub: config.default.gitHub,
+   plugins: config.plugins,
+   git: config.git,
+   gitHub: config.gitHub,
 };
