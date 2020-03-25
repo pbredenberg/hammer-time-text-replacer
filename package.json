@@ -28,7 +28,7 @@
     "@commitlint/travis-cli": "7.5.2",
     "@silvermine/chai-strictly-equal": "1.1.0",
     "@silvermine/eslint-config": "3.0.0-rc.0",
-    "@silvermine/release-it-config": "git+https://github.com/pbredenberg/release-it-config.git#15bc7ef637ca27d90b94c9c15cc497be49a219b8",
+    "@silvermine/release-it-config": "git+https://github.com/pbredenberg/release-it-config.git#756a5b1c2c969dbf571a4eea038ed3cc44b9721b",
     "@silvermine/typescript-config": "0.10.0",
     "@types/chai": "4.1.7",
     "@types/mocha": "5.2.5",
