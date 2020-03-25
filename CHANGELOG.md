@@ -1,3 +1,9 @@
+## [1.10.0](https://github.com/pbredenberg/hammer-time-text-replacer/compare/v1.10.0-rc.0...v1.10.0) (2020-03-25)
+
+### Features
+
+* feat: change logging on init to be more exciting (0bdea7d)
+
 ### [1.9.9](https://github.com/pbredenberg/hammer-time-text-replacer/compare/v1.9.9-rc.2...v1.9.9) (2020-03-25)
 
 ### [1.9.9-alpha.0](https://github.com/pbredenberg/hammer-time-text-replacer/compare/v1.9.7...v1.9.9-alpha.0) (2020-03-20)
