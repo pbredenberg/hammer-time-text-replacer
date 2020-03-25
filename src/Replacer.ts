@@ -12,7 +12,7 @@ interface INodeRecord {
 }
 
 const DEFAULT_REPLACEMENT_SELECTOR = '.replace-me',
-      DEFAULT_REPLACEMENT_TEXT = 'Hammer time.';
+      DEFAULT_REPLACEMENT_TEXT = 'Hammer time!';
 
 export default class Replacer {
 
